@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Target Store</title>
+</head>
+<body>
+    <nav>
+        <img src="./img/logo_svg.svg" alt="Logo da Target Store">
+        <ul class="menu">
+            <li>feminino</li>
+            <li>masculino</li>
+            <li>acessórios</li>
+            <li>calçados</li>
+            <li>ofertas</li>
+        </ul>
+        <div class="icones">
+            <ion-icon name="person"></ion-icon>
+            <p>minha conta<span>meus pedidos <ion-icon name="chevron-down"></ion-icon></span></p>
+            <ion-icon name="basket"></ion-icon>
+        </div>
+    </nav>
+    <div class="buscar">
+        <input type="text" name="" id="" placeholder="o que procura hoje?">
+        <ion-icon name="search"></ion-icon>
+    </div>
+
+ <main>
+    <section class="produto">
+        <div class="imagens_produtos">
+            <div class="imagens_produtos_miniatura">
+                <img src="./img/produto1_camisa_basica.png" alt="variação do produto - Camisa Básica">
+                <img src="./img/produto1_camisa_basica.png" alt="variação do produto - Camisa Básica">
+                <img src="./img/produto1_camisa_basica.png" alt="variação do produto - Camisa Básica">
+            </div>
+            <img src="./img/produto1_camisa_basica.png" alt="Produto - Camisa Básica">
+        </div>
+        <div class="informacoes_produtos">
+            <h1>Camisa Básica</h2>
+            <h2>R$ 59,99</h2>
+            <span>em até 3x de R$19,99</span>
+            <p>Selecione a cor</p>
+            <div class="opcoes">
+                <div class="cor"></div>
+                <div class="cor"></div>
+                <div class="cor"></div>
+            </div>
+            <p>Selecione o tamanho</p>
+            <div class="opcoes">
+                <div class="tamanho">P</div>
+                <div class="tamanho">M</div>
+                <div class="tamanho">G</div>
+                <div class="tamanho">GG</div>
+                <div class="tamanho">XG</div>
+            </div>
+            <button>Adicionar ao carrinho</button>
+            <div class="frete">
+                <img src="./img/Vector.svg" alt="icone de caminhão de frete">
+                <div class="info_frete">
+                    <h3>Frete grátis</h3>
+                    <span>pagando no pix ou boleto</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="descricao_produto">
+        <h2>Descrição do produto</h2>
+        <p>Camiseta modelo básico em malha. Peça básica e coringa que combina com tudo, de bermudas estampadas a calças jeans! </p>
+        <p>Composição: 100% algodão</p>
+        <p>Código: 25082022</p>
+    </section>
+    <section class="produtos_similares">
+        <h2>Você também irá gostar:</h2>
+       
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                
+                <div class="card">
+                    <img src="./img/unsplash-camisa-de-algodao.png" alt="Produto Camisa de algodão">       
+                    <h3>Camisa de algodão</h3>
+                    <p class="preco">R$ 29,99</p>
+                </div>
+
+            </div>
+
+            <div class="swiper-slide">
+                
+                <div class="card">
+                    <img src="./img/unsplash-calca-rasgada.png" alt="Produto Calça Jeans Rasgada">       
+                    <h3>Calça Jeans Rasgada</h3>
+                    <p class="preco">R$ 109,99</p>
+                </div>
+            
+            </div>
+
+            <div class="swiper-slide">
+                
+                <div class="card">
+                    <img src="./img/unsplash-blazer-azul.png" alt="Produto Blazer Azul Turquesa">       
+                    <h3>Blazer Azul Turquesa</h3>
+                    <p class="preco">R$ 229,99</p>
+                </div>
+ 
+            </div>
+
+            <div class="swiper-slide">
+                
+                <div class="card">
+                    <img src="./img/unsplash-saia-amarela.png" alt="Produto Saia Amarela">       
+                    <h3>Saia Amarela</h3>
+                    <p class="preco">R$ 69,99</p>
+                </div>
+
+            </div>
+
+
+            <div class="swiper-slide">
+                
+                <div class="card">
+                    <img src="./img/unsplash-vestido-branco.png" alt="Produto Vestido Branco">       
+                    <h3>Vestido Branco</h3>
+                    <p class="preco">R$ 89,99</p>
+                </div>
+
+            </div>
+
+            
+            <div class="swiper-slide">
+                
+                <div class="card">
+                    <img src="./img/unsplash-oculos.png" alt="Produto Óculos">       
+                    <h3>Óculos</h3>
+                    <p class="preco">R$ 99,99</p>
+                </div>
+
+            </div>
+
+
+            
+            </div>
+            
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            
+        </div>
+
+    </section>   
+
+ </main>
+
+ <footer>
+    <div class="blocos_footer">
+       <div class="footer_informacao">
+           <h2>FORMAS DE PAGAMENTO</h2>
+           <div class="icones_footer">
+               <ion-icon name="card-outline"></ion-icon>
+               <ion-icon name="card-outline"></ion-icon>
+               <ion-icon name="card-outline"></ion-icon>
+               <ion-icon name="card-outline"></ion-icon>
+           </div>
+       </div>
+
+       <div class="footer_informacao">
+           <h2>SIGA A TARGET STORE</h2>
+           <div class="icones_footer">
+               <ion-icon name="logo-facebook"></ion-icon>
+               <ion-icon name="logo-instagram"></ion-icon>
+               <ion-icon name="logo-twitter"></ion-icon>
+               <ion-icon name="logo-tiktok"></ion-icon>
+           </div>
+       </div>
+    </div>
+
+       <p>Target Store LTDA | CNPJ 123.456.0001/07 | São Paulo</p>
+   </footer>
+
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
