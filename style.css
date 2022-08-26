@@ -274,8 +274,8 @@ button{
     outline: none;
     font-size: 1rem;
   }
-  /*****vai subir **/
-  .icone_menu,
+  
+  .icone_menu_mobile,
   aside{
     display: none;
   }
