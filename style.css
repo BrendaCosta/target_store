@@ -208,6 +208,9 @@ button{
     justify-content: space-evenly;
     border-radius: 8px;
 }
+.frete img{
+    width: 30px;
+}
 .descricao_produto{
     margin: 2rem 0;
 }
@@ -271,11 +274,45 @@ button{
     outline: none;
     font-size: 1rem;
   }
-  
+  /*****vai subir **/
+  .icone_menu,
+  aside{
+    display: none;
+  }
 
   @media screen and (max-width: 768px) {
-    .menu{
+    
+    .menu,
+    .icones p,
+    sub{
         display: none;
+    }
+    .icone_menu,
+    .ativo{
+        display: block;
+    }
+  
+    aside{
+        z-index: 100;
+        width: 60%;
+        height: 100vh;
+        background: white;
+        position: absolute;
+        margin-top: 0.5rem;
+        /* padding: 1rem; */
+    }
+    .menu_mobile{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        text-transform: uppercase;
+        /* padding: 0 1rem; */
+    }
+    .menu_mobile li{
+        padding: 0 1rem;
+    }
+    nav{
+        margin-top: 1rem;
     }
     nav img{
         width: 60px;
@@ -294,6 +331,7 @@ button{
     }
     .imagens_produtos_miniatura{
         flex-direction: row;
+        justify-content: center;
     }
     .imagens_produtos_miniatura img{
         width: 5rem;
@@ -302,6 +340,7 @@ button{
     .frete{
         width: 250px;
     }
+
    
     footer{
         padding: 2rem;
@@ -309,10 +348,21 @@ button{
     .blocos_footer{
         flex-direction: column;
         gap: 0.5rem;
-        text-align: center;
+    }
+    .footer_informacao{
+        margin-bottom: 1rem;
     }
     .footer_informacao h2{
-        font-size: 1.2rem;
+        font-size: 1rem;
+    }
+    footer p{
+        text-align: center;
+    }
+    .icones_footer ion-icon {
+        font-size: 1.3rem;
+    }
+    .newslatter_footer button{
+        background: #e76868;
     }
   }
 

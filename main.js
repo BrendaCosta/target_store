@@ -26,4 +26,11 @@ const swiper = new Swiper('.swiper', {
     }
   });
 
- 
+  function abrirMenu(){   
+      document.querySelector("aside").classList.toggle("ativo");
+  }
+
+
+
+
+
