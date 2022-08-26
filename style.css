@@ -10,9 +10,7 @@ body{
     color: var(--preto);
     font-family: 'Inter', sans-serif;
 }
-h1,
-h2,
-h3{
+h1,h2,h3{
     margin: 0;
 }
 li{
@@ -25,7 +23,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 2rem;
+    margin: 2rem;
 }
 
 nav img{
@@ -102,9 +100,9 @@ sub:hover{
     font-weight: 700;
 }
 .buscar{
-    margin: 20px auto;
+    
     height: 40px;
-    width: 40%;
+    width: 30%;
     border: 1px solid #ccc;
     border-radius: 4px;
     display: flex;
@@ -244,6 +242,16 @@ button{
     color: rgb(144, 144, 144);
     font-weight: 700;
   }
+  .desconto{
+    position: absolute;
+    background: var(--vermelho);
+    width: max-content;
+    z-index: 10;
+    margin-left: -58px;
+    top: 0;
+    padding: 0.2rem;
+    color: #fff;
+  }
   .swiper-slide{
     width: auto!important;
   }
@@ -253,12 +261,13 @@ button{
   }
   .blocos_footer{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .icones_footer ion-icon{
     font-size: 2rem;
     margin-top: 0.5rem;
+    margin-left: 0.5rem;
   }
 
   .newslatter_footer{
@@ -279,9 +288,15 @@ button{
   .newslatter_footer button{
     background: #e76868;
 }
+footer p{
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: bold;
+}
   
   .icone_menu_mobile,
-  aside{
+  aside,
+  .pesquisar{
     display: none;
   }
 
@@ -289,41 +304,44 @@ button{
     
     .menu,
     .icones p,
-    sub{
+    sub,
+    .buscar{
         display: none;
     }
+    .icone_menu_mobile,
     .icone_menu,
-    .ativo{
+    .ativo,
+    .pesquisar{
         display: block;
     }
-  
+    .icone_menu_mobile{
+        font-size: 2rem;
+    }
+    .icones{
+        gap: .5rem;
+    }
     aside{
         z-index: 100;
         width: 60%;
         height: 100vh;
         background: white;
         position: absolute;
-        margin-top: 0.5rem;
-        /* padding: 1rem; */
     }
     .menu_mobile{
         display: flex;
         flex-direction: column;
         gap: 1rem;
         text-transform: uppercase;
-        /* padding: 0 1rem; */
     }
     .menu_mobile li{
         padding: 0 1rem;
     }
     nav{
-        margin-top: 1rem;
+        margin: 1rem;
+        justify-content: space-between;
     }
     nav img{
         width: 60px;
-    }
-    .buscar{
-        width: 50%;
     }
     main{
         margin: 0 1rem;
@@ -353,9 +371,11 @@ button{
     .blocos_footer{
         flex-direction: column;
         gap: 0.5rem;
+        align-items: center;
     }
     .footer_informacao{
         margin-bottom: 1rem;
+
     }
     .footer_informacao h2{
         font-size: 1rem;
@@ -365,6 +385,7 @@ button{
     }
     .icones_footer ion-icon {
         font-size: 1.3rem;
+        text-align: center;
     }
    
   }
