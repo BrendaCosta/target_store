@@ -20,17 +20,29 @@
             <li>ofertas</li>
         </ul>
         <div class="icones">
-            <ion-icon name="person"></ion-icon>
+            <ion-icon name="person" class="icone_menu"></ion-icon>
             <p>minha conta<span>meus pedidos <ion-icon name="chevron-down"></ion-icon></span></p>
-            <ion-icon name="basket"></ion-icon>
+            <div class="notificacao">
+                <ion-icon name="basket" class="icone_menu"></ion-icon><sub>1</sub>
+            </div>
         </div>
     </nav>
     <div class="buscar">
         <input type="text" name="" id="" placeholder="o que procura hoje?">
         <ion-icon name="search"></ion-icon>
     </div>
-
+    <div class="frete_gratis">
+        <p>FRETE GRÁTIS PARA TODO O BRASIL*</p>
+    </div>
  <main>
+    
+    <div class="breadcrumbs">
+        <ul>
+            <li>Home > </li>
+            <li>Feminino > </li>
+            <li>Camisa</li>
+        </ul>
+    </div>
     <section class="produto">
         <div class="imagens_produtos">
             <div class="imagens_produtos_miniatura">
@@ -38,7 +50,7 @@
                 <img src="./img/produto1_camisa_basica.png" alt="variação do produto - Camisa Básica">
                 <img src="./img/produto1_camisa_basica.png" alt="variação do produto - Camisa Básica">
             </div>
-            <img src="./img/produto1_camisa_basica.png" alt="Produto - Camisa Básica">
+            <img src="./img/produto1_camisa_basica.png" alt="Produto - Camisa Básica" class="imagem_principal">
         </div>
         <div class="informacoes_produtos">
             <h1>Camisa Básica</h2>
@@ -46,9 +58,9 @@
             <span>em até 3x de R$19,99</span>
             <p>Selecione a cor</p>
             <div class="opcoes">
-                <div class="cor"></div>
-                <div class="cor"></div>
-                <div class="cor"></div>
+                <div class="cor cor1"></div>
+                <div class="cor cor2"></div>
+                <div class="cor cor3"></div>
             </div>
             <p>Selecione o tamanho</p>
             <div class="opcoes">
@@ -173,17 +185,28 @@
        </div>
 
        <div class="footer_informacao">
-           <h2>SIGA A TARGET STORE</h2>
-           <div class="icones_footer">
-               <ion-icon name="logo-facebook"></ion-icon>
-               <ion-icon name="logo-instagram"></ion-icon>
-               <ion-icon name="logo-twitter"></ion-icon>
-               <ion-icon name="logo-tiktok"></ion-icon>
+            <h2>SIGA A TARGET STORE</h2>
+            <div class="icones_footer">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-tiktok"></ion-icon>
+            </div>
+        </div>
+       <div class="footer_informacao">
+           <h2>RECEBA NOVIDADES E PROMOÇÕES</h2>
+           <div class="newslatter_footer">
+               <label for="">Nome</label>
+               <input type="text" >
+               <label for="">Email</label>
+               <input type="email" >
            </div>
        </div>
     </div>
 
-       <p>Target Store LTDA | CNPJ 123.456.0001/07 | São Paulo</p>
+     
+        <p>Target Store LTDA | CNPJ 123.456.0001/07 | São Paulo</p>
+    
    </footer>
 
     
