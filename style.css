@@ -5,6 +5,11 @@
 :root{
     --vermelho: #F4364C;
     --preto: #2a2a2a;
+    --branco: #fff;
+    --rosa: #FFF5F5;
+    --salmao: #E76868;
+    --cinza: #ccc;
+    --btnAddCarrinho: #008844;
 }
 body{
     color: var(--preto);
@@ -40,7 +45,7 @@ nav .icone_menu{
 }
 sub{
     background: var(--vermelho);
-    color: #fff;
+    color: var(--branco);
     border-radius: 50px;
     width: 15px;
     height: 15px;
@@ -56,8 +61,8 @@ sub:hover{
     box-shadow: rgb(100 100 111 / 20%) 0px 7px 29p
 }
 .frete_gratis{
-    background: #E76868;
-    color: #fff;
+    background: var(--salmao);
+    color: var(--branco);
     font-weight: 700;
     text-align: center;
     padding: 0.2rem;
@@ -100,10 +105,9 @@ sub:hover{
     font-weight: 700;
 }
 .buscar{
-    
     height: 40px;
-    width: 30%;
-    border: 1px solid #ccc;
+    width: 20%;
+    border: 1px solid var(--cinza);
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -154,31 +158,31 @@ sub:hover{
     width: 30px;
     height: 30px;
     border-radius: 50px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--cinza);
 }
 .cor1{
-    background: #fff;
+    background: var(--branco);
 }
 .cor2{
-    background: #E76868;
+    background: var(--salmao);
 }
 .cor3{
-    background: #CDCDCD;
+    background: var(--cinza);
 }
 .tamanho{
     width: 30px;
     height: 30px;
     border-radius: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--cinza);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .tamanho:hover{
-    background: #fff5f5;
+    background: var(--rosa);
     font-weight: 600;
-    border: 1px solid rgb(187, 185, 185);
+    border: 1px solid var(--cinza);
     
 }
 
@@ -188,8 +192,8 @@ sub:hover{
     }
 
 button{
-    background: #008844;
-    color: white;
+    background: var(--btnAddCarrinho);
+    color: var(--branco);
     text-transform: uppercase;
     font-weight: 700;
     height: 40px;
@@ -199,7 +203,7 @@ button{
     margin-top: 2rem;
 }
 .frete{
-    background: #FFF5F5;
+    background: var(--rosa);
     padding: 1rem;
     width: 300px;
     margin-top: 2rem;
@@ -229,7 +233,7 @@ button{
 
   .card{
     padding: 1rem;
-    background: white;
+    background: var(--branco);
     box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
     width: fit-content;
     border-radius: 8px;
@@ -239,7 +243,7 @@ button{
   }
   .card p{
     margin-top: 0.5rem;
-    color: rgb(144, 144, 144);
+    color: var(--cinza);
     font-weight: 700;
   }
   .desconto{
@@ -250,13 +254,10 @@ button{
     margin-left: -58px;
     top: 0;
     padding: 0.2rem;
-    color: #fff;
-  }
-  .swiper-slide{
-    width: auto!important;
+    color: var(--branco);
   }
   footer{
-    background: #FDE0E3;
+    background: var(--rosa);
     padding: 3rem;
   }
   .blocos_footer{
@@ -280,13 +281,13 @@ button{
   .newslatter_footer input{
     background: transparent;
     border: none;
-    border-bottom: 1px solid #353333;
+    border-bottom: 1px solid var(--preto);
     margin-bottom: 1rem;
     outline: none;
     font-size: 1rem;
   }
   .newslatter_footer button{
-    background: #e76868;
+    background: var(--salmao);
 }
 footer p{
     text-align: center;
@@ -324,7 +325,7 @@ footer p{
         z-index: 100;
         width: 60%;
         height: 100vh;
-        background: white;
+        background: var(--branco);
         position: absolute;
     }
     .menu_mobile{
