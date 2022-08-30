@@ -8,7 +8,7 @@
     --branco: #fff;
     --rosa: #FFF5F5;
     --salmao: #E76868;
-    --cinza: #ccc;
+    --cinza: rgb(118, 118, 118);
     --btnAddCarrinho: #008844;
 }
 body{
@@ -136,6 +136,9 @@ sub:hover{
     flex-direction: column;
     gap: 1rem;
     align-items: center;
+    height: 600px;
+    overflow-y: scroll;
+    width: 180px;
 }
 .imagens_produtos_miniatura img{
     width: 9rem;
@@ -160,6 +163,12 @@ sub:hover{
     border-radius: 50px;
     border: 1px solid var(--cinza);
 }
+.cor:hover{
+    border: 1px solid #2a2a2a;
+}
+.cor.ativo{
+    border: 2px solid #2a2a2a;
+}
 .cor1{
     background: var(--branco);
 }
@@ -182,8 +191,12 @@ sub:hover{
 .tamanho:hover{
     background: var(--rosa);
     font-weight: 600;
-    border: 1px solid var(--cinza);
-    
+    border: 1px solid var(--cinza);  
+}
+.tamanho.ativo{
+    border: 2px solid #2a2a2a;
+    font-weight: 500;
+    background: var(--rosa);
 }
 
 .informacoes_produtos p,
@@ -260,13 +273,17 @@ button{
     background: var(--rosa);
     padding: 3rem;
   }
+  .footer_informacao h2{
+    color: #5c5c5c;
+    font-weight: 400;
+  }
   .blocos_footer{
     display: flex;
     justify-content: space-around;
   }
 
   .icones_footer ion-icon{
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 0.5rem;
     margin-left: 0.5rem;
   }
@@ -356,6 +373,10 @@ footer p{
     .imagens_produtos_miniatura{
         flex-direction: row;
         justify-content: center;
+        height: auto;
+        overflow-y: unset;
+        overflow-x: scroll;
+        width: auto;
     }
     .imagens_produtos_miniatura img{
         width: 5rem;
